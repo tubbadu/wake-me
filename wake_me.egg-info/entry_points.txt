@@ -1,0 +1,3 @@
+[console_scripts]
+wake-me = scripts.__main__:main
+

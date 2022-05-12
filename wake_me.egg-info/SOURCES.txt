@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+scripts/__init__.py
+scripts/__main__.py
+wake_me.egg-info/PKG-INFO
+wake_me.egg-info/SOURCES.txt
+wake_me.egg-info/dependency_links.txt
+wake_me.egg-info/entry_points.txt
+wake_me.egg-info/top_level.txt

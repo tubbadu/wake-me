@@ -3,6 +3,7 @@
 # 
 # wake-me in 5m 2h 
 #
+__version__ = "1.0.0"
 
 import os
 import subprocess
@@ -34,7 +35,7 @@ def Help():
 def runHidden(args):
 	if "--no-background" not in args:
 		file_path = os.path.realpath(__file__)
-		subprocess.Popen([file_path, "--no-background"] + args)
+		subprocess.Popen(["wake-me", "--no-background"] + args)
 		time.sleep(0.1)
 		exit()
 
@@ -107,6 +108,7 @@ def main():
 		t-=43200
 	print("waking you in", t, 'seconds, at', (datetime.datetime.now() + datetime.timedelta(seconds=t)).strftime("%H:%M:%S"))
 	time.sleep(t)
+	print("\n")
 	bash(f"kdeconnect-cli -n SM-A750FN --ping-msg '{msg}'")
 	if not ('-m' in flags or '--mute' in flags):
 		if not ('-s' in flags):

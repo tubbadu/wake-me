@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: wake-me
+Version: 1.0.0
+Summary: set an alarm at a desired time
+Home-page: https://github.com/tubbadu/wake-me
+Author: Tubbadu
+Author-email: tubbadu@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+
+# wake-me
+
+a simple command line alarm clock to remind you everything!
+
+just put `wake-me` 
+
+`wake-me in 10m 30s "pasta is cooked!"` or `wake-me at 19.30 "remember to go out for dinner!"`
+
+## todo
+
++ add all flags cases into this readme
+
++ add an installation script :)
+
++ perhaps release it on pypi
+
+
