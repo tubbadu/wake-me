@@ -112,7 +112,7 @@ def main():
 	bash(f"kdeconnect-cli -n SM-A750FN --ping-msg '{msg}'")
 	if not ('-m' in flags or '--mute' in flags):
 		if not ('-s' in flags):
-			bash(f'say {msg}')
+			bash(f'mimic -t \"{msg}\"')
 	ret = bash(f'dunstify -a "wake-me" -i "ktimer" -A "+5m","+5m" -A "+15m","+15m" -A "+30m","+30m" -A "+1h","+1h" -A "+{int(t)}s","+{int(t)}s" -A "off","off" "{msg}" -t 0', read=True).strip()
 	if ret[0] == '+':
 		print('\npostponing:', ret)
