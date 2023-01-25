@@ -5,14 +5,10 @@ A simple command line alarm clock to remind you everything!
 ## Dependencies
 
 ```bash
-# gtts
-pip3 install gTTS
-# dunstify
-    # debian based OS
-    sudo apt install dunstify
-    # red hat based OS
-    sudo dnf install dunstify
-# optional, KDE connect
+mimic
+dunstify
+# optional
+kdeconnect
 ```
 
 ## installation
